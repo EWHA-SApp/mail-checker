@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "Gmail Notifier",
+    "version": "1.0",
+    "description": "Get notifications for new Gmail messages.",
+    "permissions": [
+      "identity",
+      "identity.email",
+      "notifications"
+    ],
+    "host_permissions": [
+      "https://www.googleapis.com/*"
+    ],
+    "background": {
+      "service_worker": "scripts/background.js"
+    },
+    "action": {
+      "default_popup": "popup/popup.html"
+    },
+    "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "oauth2": {
+      "client_id": "487687881637-7dvh7h6054kle964qkdku1r9uuu0ko96.apps.googleusercontent.com",
+      "scopes": [
+        "https://www.googleapis.com/auth/gmail.readonly"
+      ]
+    }
+  }
+  
